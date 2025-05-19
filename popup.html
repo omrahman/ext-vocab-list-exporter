@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpanishDict Vocabulary List Exporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="sr-only">SpanishDict Vocabulary List Exporter</h1>
+  </header>
+  <main>
+    <button id="run-btn" type="button">Gather Vocabulary List</button>
+    <div id="results-container" role="region" aria-label="Vocabulary list results">
+      <table id="results-table">
+        <thead class="table-header">
+          <tr>
+            <th scope="col">Spanish</th>
+            <th scope="col">English</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody id="results-body">
+        </tbody>
+      </table>
+    </div>
+    <button id="export-csv" type="button" aria-label="Export results to CSV" style="display: none;">Export to CSV</button>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html> 
